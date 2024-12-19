@@ -1,0 +1,45 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(30px);
+    animation: moveup 1s linear forwards;
+}
+#answer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    opacity: 0;
+    transform: translate3d(30px);
+    animation: moveup 1s linear forwards;
+    animation-delay: 1s;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    opacity: 0;
+    transform: translate3d(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translate3d(0px);
+    }
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
